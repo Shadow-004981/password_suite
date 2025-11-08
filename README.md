@@ -38,3 +38,8 @@ Smart-Password-Suite/
 ├── app.py # Main Streamlit app
 ├── requirements.txt # Dependencies
 └── README.md # Documentation
+
+## How to run
+```
+streamlit run password.py
+```
