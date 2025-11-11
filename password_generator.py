@@ -49,11 +49,11 @@ def show_password_generator():
         st.subheader("Custom Password mode")
         st.write("Choose your own password structure!")
         
-        total_length = st.number_input("Total password length: ", value=16, step=1)
-        uppercase_count = st.number_input("Number uppercase letters: ", value=3, step=1)
-        lowercase_count = st.number_input("Number of lower case letters: ", value=3, step=1)
-        digits_count = st.number_input("Number of digits: ", value=3, step=1)
-        specials_count = st.number_input("Number of special symbols: ", value=3, step=1)
+        total_length = st.number_input("Total password length: ",min_value=16, max_value=30, value=16, step=1)
+        uppercase_count = st.number_input("Number uppercase letters: ", value=4, step=1)
+        lowercase_count = st.number_input("Number of lower case letters: ", value=4, step=1)
+        digits_count = st.number_input("Number of digits: ", value=4, step=1)
+        specials_count = st.number_input("Number of special symbols: ", value=4, step=1)
 
         generate_custom = st.button("Generate Custom Password")
         regenerate_custom = st.button("Regenerate Custom Password")
